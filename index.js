@@ -1,14 +1,14 @@
 // problem 1 : FizzBuzz
 
 for (var i = 1; i <= 100; i++) {
-  if (i % 3 == 0) {
-    console.log("Fizz");
-  }
-  if (i % 5 == 0) {
-    console.log("Buzz");
-  }
   if (i % 3 == 0 && i % 5 == 0) {
     console.log("FizzBuzz");
+  }
+  else if (i % 3 == 0) {
+    console.log("Fizz");
+  }
+  else if (i % 5 == 0) {
+    console.log("Buzz");
   } else {
     console.log(i);
   }
@@ -51,7 +51,7 @@ var num2 = +window.prompt("Please Enter Second Number");
 var num3 = +window.prompt("Please Enter Third Number");
 if (num1 > num2 && num1 > num3) {
   console.log("The Largest Number is " + num1);
-} else if (num2 > num1 && num1 > num3) {
+} else if (num2 > num1 && num2 > num3) {
   console.log("The Largest Number is " + num2);
 } else {
   console.log("The Largest Number is " + num3);
